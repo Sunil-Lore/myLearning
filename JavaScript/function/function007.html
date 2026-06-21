@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Returning values early</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        function myFunction(x) {
+
+            if (x > 5) {
+                return "x is greater than 5";
+            }
+            return "x is less than or equal to 5";
+        }
+
+        document.getElementById("demo").innerHTML = myFunction(32);   
+        </script>
+</body>
+</html>

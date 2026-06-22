@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empty JavaScript Project</title>
+</head>
+<body>
+    <p id="output"></p>
+    <script>
+        // You can write your JavaScript code here  
+        const person = {};
+       // Now add object properties with their values
+       person.name = "John Doe";
+       person.age = 30;
+       person.city = "New York";
+
+         // Displaying object properties in the HTML    
+        document.getElementById("output").innerHTML = `
+            <b>Name:</b> ${person.name}<br>
+            <b>Age:</b> ${person.age}<br>
+            <b>City:</b> ${person.city}
+        `;
+    </script>
+</body>
+</html>

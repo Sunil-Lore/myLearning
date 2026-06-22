@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple JavaScript Object Methods</title>
+</head>
+<body>
+    <p id="output"></p>
+    <script>
+        const person = {
+        firstName: "John",
+        lastName: "Doe",
+        age: 50,
+        fullName: function() {
+            return `${person.firstName}  ${person.lastName}`;
+        }
+        };
+          document.getElementById("output").innerHTML = `
+            <b>firstName: </b>${person.firstName}<br />
+            <b>lastName: </b>${person.lastName}<br />
+            <b>age: </b>${person.age}<br />
+            <b>fullname: </b>${person.fullName()}
+            `;
+    </script>
+</body>
+</html>

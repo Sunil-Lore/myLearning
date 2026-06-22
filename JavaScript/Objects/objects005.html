@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deleting Properties from JavaScript Objects</title>
+</head>
+<body>
+    <p id="output1"></p>
+    <p id="output2"></p>
+    <script>
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 50,
+            fullName: function() {
+                return `${this.firstName}  ${this.lastName}`;
+            }
+        };
+
+        // Adding new properties to the object
+        person.city = "New York";
+        person.country = "USA";
+
+        document.getElementById("output1").innerHTML = `
+            <b>firstName: </b>${person.firstName}<br />
+            <b>lastName: </b>${person.lastName}<br />
+            <b>age: </b>${person.age}<br />
+            <b>fullname: </b>${person.fullName()}<br />
+            <b>city: </b>${person.city}<br />
+            <b>country: </b>${person.country}
+        `;
+
+            // Deleting a property from the object
+            delete person.city;
+            delete person.lastName;
+            
+            document.getElementById("output2").innerHTML = `
+            <b>firstName: </b>${person.firstName}<br />
+            <b>lastName: </b>${person.lastName}<br />
+            <b>age: </b>${person.age}<br />
+            <b>fullname: </b>${person.fullName()}<br />
+            <b>city: </b>${person.city}<br />
+            <b>country: </b>${person.country}
+        `;
+    </script>
+</body>
+</html>

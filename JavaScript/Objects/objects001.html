@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple JavaScript Object</title>
+</head>
+<body>
+    <p id="output"></p>
+    <script>
+        // Creating a simple JavaScript object
+        const person = {
+            name: "John Doe",
+            age: 30,
+            city: "New York"
+        };
+
+        // Displaying object properties in the HTML
+        document.getElementById("output").innerHTML = `
+            <b>Name:</b> ${person.name}<br>
+            <b>Age:</b> ${person.age}<br>
+            <b>City:</b> ${person.city}
+        `;
+    </script>
+</body>
+</html>

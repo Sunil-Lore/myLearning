@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merging Objects in JavaScript using Spread syntax</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const personBio = {
+            name: "John",
+            age: 30,
+            city: "New York"
+        };
+        const personHobby = {
+            hobby: "Reading",
+            favoriteColor: "Blue"
+        };
+        const person = {...personBio, ...personHobby};
+        document.getElementById("demo").innerHTML = person.name + " is " +  person.age + " years old, lives in " + person.city + ", enjoys " + person.hobby + ", and loves the color " + person.favoriteColor + ".";
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Another Simple FOR...OF Loop in JavaScript</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        // Example of another simple FOR...OF loop in JavaScript
+        const colors = ['Red', 'Green', 'Blue', 'Yellow'];
+        let output = '';
+
+        for (const color of colors) {
+            output += color + '<br>';
+        }
+
+        document.getElementById('demo').innerHTML = output;
+    </script>
+</body>
+</html>

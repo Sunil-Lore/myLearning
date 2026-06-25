@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checking if a Property Exists in an JavaScript object</title>
+</head>
+<body>
+    <script>
+        const person = {
+            name: "John Doe",
+            age: 30,
+            city: "New York"
+        };
+
+        // Checking if a property exists in the object
+        const hasNameProperty = person.hasOwnProperty("name");
+        const hasCountryProperty = person.hasOwnProperty("country");
+
+        // Displaying the results in the console
+        console.log(`Does the 'name' property exist? ${hasNameProperty}`); // true
+        console.log(`Does the 'country' property exist? ${hasCountryProperty}`); // false
+    </script>
+</body>
+</html>

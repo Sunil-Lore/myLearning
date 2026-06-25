@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixing rest and normal parameters in JavaScript</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>    
+        function greet(greeting, ...names) {
+            for(let name of names) {
+                document.getElementById("demo").innerHTML += `${greeting} ${name}!<br>`;
+            }
+        }
+
+        greet("Hello", "John", "Jane", "Bob");
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Arrow Functions in JavaScript</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+
+    <script>
+        //Example 1: A simple arrow function
+        const myFunction1 = () => "Hello World!";
+        document.getElementById("demo1").innerHTML = myFunction1();
+
+        //Example 2: An arrow function with a parameter
+        const myFunction2 = (parameter) => {
+            return parameter;
+        }
+        document.getElementById("demo2").innerHTML = myFunction2("Hello, World!");
+
+        //Example 3: An arrow function with a single parameter (no parentheses needed)
+        const myFunction3 = parameter => parameter;
+        document.getElementById("demo3").innerHTML = myFunction3("Hello, World!");
+
+        //Example 4: An arrow function with multiple parameters
+        const myFunction4 = (param1, param2) => param1 + param2;
+        document.getElementById("demo4").innerHTML = myFunction4(5, 10);    
+
+        //Example 6: An arrow function with a block body
+        const myFunction6 = () => {
+            return "Hello World!";
+        };
+        document.getElementById("demo6").innerHTML = myFunction6();
+
+    </script>
+</body>
+</html>

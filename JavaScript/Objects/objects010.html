@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find the number of properties in an JS object</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script> 
+    
+        const person = {
+            name: "John",
+            age: 30,
+            city: "New York"
+        };
+        const numberOfProperties = Object.keys(person).length;
+        document.getElementById("demo").innerHTML = "The number of properties in the person object is: " + numberOfProperties;   
+        </script>
+
+</body>
+</html>

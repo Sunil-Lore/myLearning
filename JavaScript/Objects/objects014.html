@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check for a specific property in an javaScript object </title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const person = { name: "David", number: 12345 };
+        if ("name" in person) {
+            document.getElementById("demo").innerHTML = "Property exists: name";
+        }
+    </script>
+</body>
+</html>

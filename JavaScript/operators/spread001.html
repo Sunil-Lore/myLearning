@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread operator in JavaScript</title>
+</head>
+<body>
+  <h2>My Fruits List</h2>
+  <p id="groceries"></p>
+
+  <script>
+    const fruits = ["🍎 Apple", "🍌 Banana", "🍇 Grapes", "🍓 Strawberry"];
+    const fruitList = [...fruits];
+
+    // Show on web page
+    document.getElementById("groceries").innerHTML = fruitList.join("<br>");
+  </script>
+</body>
+</html>

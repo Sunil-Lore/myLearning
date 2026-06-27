@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback function in JavaScript</title>
+</head>
+<body>
+    <p id="output">Waiting for the callback...</p>
+    <button id="show Date">The date is?</button>
+    <script>
+        function today() {
+        document.getElementById("output").innerHTML = Date();
+        }
+
+        document.getElementById("show Date").addEventListener("click", today);
+    </script>
+</body>
+</html>

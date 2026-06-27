@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async setInterval Example in JavaScript</title>
+</head>
+<body>
+    <p id="output">Waiting for the interval...</p>
+    <script>
+        setInterval(myFunction, 1000);
+        
+        function myFunction() {
+        let date = new Date();
+        document.getElementById("output").innerHTML=
+        date.getHours() + ":" +
+        date.getMinutes() + ":" +
+        date.getSeconds();
+        }
+    </script>
+</body>
+</html>

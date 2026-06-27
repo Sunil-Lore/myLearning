@@ -10,10 +10,8 @@
     <script>
         const myJSON = '{"name":"John", "age":30, "city":"New York"}';
         const myObj = JSON.parse(myJSON);
-        for(let key in myObj) {
-          document.getElementById("demo").innerHTML +=
-          key + ": " + myObj[key] + "<br>";
-        }
+        document.getElementById("demo").innerHTML =
+        myObj.name + ", " + myObj.age + ", " + myObj.city;
     </script>
 </body>
 </html>

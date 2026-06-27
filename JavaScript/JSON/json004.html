@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converting JSON array into an JavaScript array</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const jsonArray = '[{"name":"John","age":30},{"name":"Jane","age":25}]';
+        const jsArray = JSON.parse(jsonArray);
+        document.getElementById("demo").innerHTML =
+        jsArray[0].name + " is " + jsArray[0].age + " years old.";
+    </script>
+</body>
+</html>

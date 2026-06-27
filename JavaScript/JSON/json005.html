@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert a string into a date</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        const jsonData = '{"name":"Sunil", "birth":"1996-12-14", "favColor":"Purple"}';
+        const myObj = JSON.parse(jsonData);
+        myObj.birth = new Date(myObj.birth);
+
+        // Extract year, month, and date
+        const year = myObj.birth.getFullYear();
+        const month = myObj.birth.getMonth() + 1; // Months are 0-based
+        const day = myObj.birth.getDate();
+
+        document.getElementById("demo1").innerHTML =
+        myObj.name + ", " + year + "-" + month + "-" + day;
+
+        document.getElementById("demo2").innerHTML =
+            myObj.name + ", " +
+            myObj.birth.getFullYear() + "-" +
+            (myObj.birth.getMonth() + 1) + "-" +
+            myObj.birth.getDate();
+        
+        document.getElementById("demo3").innerHTML =
+        myObj.name + ", " + myObj.birth.toLocaleDateString("en-CA");
+
+
+    </script>
+</body>
+</html>

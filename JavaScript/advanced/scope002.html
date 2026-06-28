@@ -6,15 +6,16 @@
     <title>Local Scope in JavaScript</title>
 </head>
 <body>
-    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
     <script>
         function accessVar(){
             let lVar = 20; // local variable
-            document.getElementById("demo").innerHTML
+            document.getElementById("demo1").innerHTML
             = "Local Variable: " + lVar;
         }
-
         accessVar();
+                document.getElementById("demo2").innerHTML = lVar; // This will throw an error because lVar is not defined in this scope
     </script>
 </body>
 </html>
